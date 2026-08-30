@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jason's Food to Go | Fresh Fish & Chips</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0b1d3a',
+              deepBlue: '#071326',
+              gold: '#f59e0b',
+              crispGold: '#fbbf24',
+              cream: '#fffdf9',
+              slatePanel: '#13233f'
+            }
+          },
+          fontFamily: {
+            signage: ['"Bebas Neue"', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Shopfront Neon & Window Slat Styling */
+    .sign-glow {
+      text-shadow: 0 0 20px rgba(245, 158, 11, 0.4), 0 2px 4px rgba(0,0,0,0.8);
+    }
+    .window-card {
+      background: linear-gradient(180deg, #13233f 0%, #0c182c 100%);
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    }
+    .slat-item {
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+      transition: all 0.25s ease-in-out;
+    }
+    .slat-item:hover {
+      background: rgba(245, 158, 11, 0.08);
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      border-radius: 0.375rem;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-deepBlue text-slate-100 font-sans antialiased selection:bg-brand-gold selection:text-brand-deepBlue">
+
+  <div class="bg-brand-gold text-brand-deepBlue text-xs sm:text-sm font-bold tracking-wide py-2 px-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <span class="flex items-center gap-1.5">
+        <i data-lucide="map-pin" class="w-4 h-4"></i> Hot & Fresh Daily • Pickup & Takeaway
+      </span>
+      <a href="tel:0800000000" class="hover:underline flex items-center gap-1 font-extrabold">
+        <i data-lucide="phone" class="w-4 h-4"></i> Call to Order Ahead
+      </a>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-brand-navy/95 backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      
+      <a href="#" class="flex flex-col">
+        <span class="font-signage text-3xl sm:text-4xl tracking-wider text-white leading-none">
+          JASON'S <span class="text-brand-gold">FOOD TO GO</span>
+        </span>
+        <span class="text-[10px] tracking-[0.25em] text-slate-400 font-semibold uppercase">
+          Traditional Fish & Chips
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
+        <a href="#menu" class="text-slate-200 hover:text-brand-gold transition">Menu</a>
+        <a href="#combos" class="text-slate-200 hover:text-brand-gold transition">Packs & Deals</a>
+        <a href="#about" class="text-slate-200 hover:text-brand-gold transition">About</a>
+        <a href="#contact" class="text-slate-200 hover:text-brand-gold transition">Find Us</a>
+      </nav>
+
+      <a href="tel:0800000000" class="bg-brand-gold hover:bg-brand-crispGold text-brand-deepBlue font-black text-sm uppercase px-5 py-2.5 rounded-lg shadow-lg hover:shadow-brand-gold/20 hover:scale-105 transition-all flex items-center gap-2">
+        <i data-lucide="phone-call" class="w-4 h-4"></i> Order Now
+      </a>
+    </div>
+  </header>
+
+  <section class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-brand-navy via-brand-navy to-brand-deepBlue border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      
+      <div>
+        <div class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/30 text-brand-gold px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Crispy Batter & Golden Hot Chips
+        </div>
+        <h1 class="font-signage text-5xl sm:text-6xl lg:text-7xl text-white tracking-wide leading-none mb-4 sign-glow">
+          THE LOCAL FAVOURITE <br/><span class="text-brand-gold">DONE PROPERLY.</span>
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg mb-8 max-w-lg leading-relaxed">
+          Local fish, perfectly seasoned hand-cut chips, burgers, and classic chiko rolls. Made fresh to order with no shortcuts.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#menu" class="bg-brand-gold hover:bg-brand-crispGold text-brand-deepBlue font-black uppercase tracking-wider px-6 py-3.5 rounded-lg transition-all shadow-md">
+            View Window Menu
+          </a>
+          <a href="#contact" class="border border-white/20 hover:border-brand-gold text-white font-bold px-6 py-3.5 rounded-lg transition-all flex items-center gap-2">
+            <i data-lucide="clock" class="w-4 h-4 text-brand-gold"></i> View Opening Hours
+          </a>
+        </div>
+      </div>
+
+      <div class="relative flex justify-center">
+        <div class="w-full max-w-sm rounded-2xl p-8 border border-white/10 bg-brand-slatePanel/80 shadow-2xl relative">
+          <div class="absolute -top-4 -right-4 bg-brand-gold text-brand-deepBlue font-signage text-xl px-4 py-1.5 rounded shadow-lg uppercase tracking-wider">
+            Cooked Fresh Daily
+          </div>
+          <h3 class="font-signage text-2xl text-white tracking-wide border-b border-white/10 pb-3 mb-4 flex items-center gap-2">
+            <i data-lucide="utensils" class="w-5 h-5 text-brand-gold"></i> Fast Counter Takeaway
+          </h3>
+          <ul class="space-y-3.5 text-sm text-slate-300">
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold shrink-0"></i> Crispy battered or grilled fish fillets
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold shrink-0"></i> Classic Aussie burgers with the lot
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold shrink-0"></i> Family & fisherman value packs
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold shrink-0"></i> Chicken salt on demand
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="menu" class="py-20 max-w-6xl mx-auto px-4">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-brand-gold font-signage text-xl uppercase tracking-widest">Counter Display</span>
+      <h2 class="font-signage text-4xl sm:text-5xl text-white tracking-wide mt-1">THE WINDOW MENU</h2>
+      <p class="text-slate-400 text-sm mt-2">All prices include GST. Phone ahead for quick pickup.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="window-card rounded-xl p-6 border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between border-b-2 border-brand-gold/50 pb-2 mb-4">
+            <h3 class="font-signage text-2xl tracking-wide text-brand-gold">FRESH FISH & SEAFOOD</h3>
+            <i data-lucide="fish" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div class="space-y-3 text-sm">
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Local Snapper</p>
+                <p class="text-xs text-slate-400">Battered or grilled</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$14.50</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Crisp Batter Hoki / Hake</p>
+                <p class="text-xs text-slate-400">Golden & crunchy</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$10.50</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Crumbed Calamari Rings (6pc)</p>
+                <p class="text-xs text-slate-400">Tender squid rings</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$8.50</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Prawn Cutlets (4pc)</p>
+                <p class="text-xs text-slate-400">Lightly breaded</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$9.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="window-card rounded-xl p-6 border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between border-b-2 border-brand-gold/50 pb-2 mb-4">
+            <h3 class="font-signage text-2xl tracking-wide text-brand-gold">BURGERS & ROLLS</h3>
+            <i data-lucide="sandwich" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div class="space-y-3 text-sm">
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Plain Beef Burger</p>
+                <p class="text-xs text-slate-400">Patty, lettuce, tomato, sauce</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$11.00</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Burger with The Lot</p>
+                <p class="text-xs text-slate-400">Bacon, egg, beetroot, cheese</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$15.50</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Crispy Fish Burger</p>
+                <p class="text-xs text-slate-400">Battered fillet & house tartare</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$12.50</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Steak Sandwich</p>
+                <p class="text-xs text-slate-400">Tender scotch fillet & onions</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$16.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="combos" class="window-card rounded-xl p-6 border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between border-b-2 border-brand-gold/50 pb-2 mb-4">
+            <h3 class="font-signage text-2xl tracking-wide text-brand-gold">SNACKS & CHIPS</h3>
+            <i data-lucide="flame" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div class="space-y-3 text-sm">
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Hot Chips (Small / Large)</p>
+                <p class="text-xs text-slate-400">With plain or chicken salt</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$5 / $9</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Potato Scallop / Cake</p>
+                <p class="text-xs text-slate-400">Hand dipped & golden</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$2.00</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Chiko Roll / Spring Roll</p>
+                <p class="text-xs text-slate-400">The Aussie classic</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$4.50</span>
+            </div>
+            <div class="slat-item py-2 flex justify-between items-baseline">
+              <div>
+                <p class="font-bold text-white">Dim Sim (Steamed / Fried)</p>
+                <p class="text-xs text-slate-400">With soy sauce</p>
+              </div>
+              <span class="font-signage text-xl text-brand-gold">$2.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-brand-navy border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      
+      <div class="flex items-start gap-4">
+        <div class="bg-brand-gold/10 p-3 rounded-lg text-brand-gold border border-brand-gold/20">
+          <i data-lucide="map-pin" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h4 class="font-signage text-xl text-white tracking-wide">LOCATION</h4>
+          <p class="text-slate-300 text-sm mt-1">Jason's Food to Go</p>
+          <p class="text-slate-400 text-xs">Easy parking right out front</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="bg-brand-gold/10 p-3 rounded-lg text-brand-gold border border-brand-gold/20">
+          <i data-lucide="clock" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h4 class="font-signage text-xl text-white tracking-wide">TRADING HOURS</h4>
+          <p class="text-slate-300 text-sm mt-1">Tue – Sun: 11:30 AM – 8:00 PM</p>
+          <p class="text-slate-400 text-xs">Closed Mondays</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="bg-brand-gold/10 p-3 rounded-lg text-brand-gold border border-brand-gold/20">
+          <i data-lucide="phone" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h4 class="font-signage text-xl text-white tracking-wide">PHONE ORDERS</h4>
+          <p class="text-slate-300 text-sm mt-1">Call ahead for quick takeaway</p>
+          <a href="tel:0800000000" class="text-brand-gold hover:underline font-bold text-sm block mt-0.5">
+            (08) 0000 0000
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="py-8 bg-brand-deepBlue text-center text-xs text-slate-500 border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>© 2026 Jason's Food to Go. All rights reserved.</p>
+      <p class="text-slate-400 font-medium">Website built for fast loading & easy mobile phone orders.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
