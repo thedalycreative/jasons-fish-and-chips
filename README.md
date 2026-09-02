@@ -6,13 +6,14 @@
 
   **A nostalgia-infused, retro-styled single-page web app for Cloverdale's iconic family fish & chip shop.**
 
+  [![Deployed on Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fish-and-chips-shop-cloverdale.vercel.app)
   [![React 19](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
   [![Vite](https://img.shields.io/badge/Vite-6.3.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.1.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](#-contributing)
 
-  [Live Preview](#-live-demo--preview) • [Features](#-features) • [Quick Start](#-quick-start) • [Menu Customization](#-editing-the-menu-prices--shop-hours) • [Architecture](#-architecture--data-flow)
+  [🌐 **Live Web App**](https://fish-and-chips-shop-cloverdale.vercel.app) • [Features](#-features) • [Quick Start](#-quick-start) • [Menu Customization](#-editing-the-menu-prices--shop-hours) • [Architecture](#-architecture--data-flow)
 
 </div>
 
@@ -38,6 +39,7 @@ This web application brings the authentic Australian takeaway shopfront experien
 ## 📸 Live Demo & Preview
 
 <div align="center">
+  <p>👉 <strong>Visit Live Site:</strong> <a href="https://fish-and-chips-shop-cloverdale.vercel.app">https://fish-and-chips-shop-cloverdale.vercel.app</a></p>
   <img src="docs/images/demo.webp" alt="Jason's Fish & Chips Web App Demo" width="100%" style="border-radius: 8px; border: 1px solid #333;" />
 </div>
 
